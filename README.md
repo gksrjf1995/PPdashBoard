@@ -1,6 +1,6 @@
-# Getting Started with Create React App
+# Getting Started with Create React App & Tailwind Css
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+테일윈드 css 설치방법 [설치방법 URL](https://tailwindcss.com/docs/installation).
 
 ## Available Scripts
 
@@ -68,6 +68,9 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
 # DashBoard
+
 # PPdashBoard
+
 # PPdashBoard
