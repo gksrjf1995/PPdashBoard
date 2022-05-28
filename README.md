@@ -2,9 +2,11 @@
 
 테일윈드 css 설치방법 [설치방법 URL](https://tailwindcss.com/docs/installation).
 
-## Available Scripts
+##
 
-In the project directory, you can run:
+속성
+1.content={"Menu"} hover 했을 때 표기되는 이름 2. position="BottomCenter" 위치 지정
+테일윈드 css 설치방법 [syncfusion Tooltip컴포넌트 사용](https://ej2.syncfusion.com/react/documentation/tooltip/getting-started/).
 
 ### `npm start`
 
