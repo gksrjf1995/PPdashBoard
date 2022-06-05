@@ -8,13 +8,12 @@
 1.content={"Menu"} hover 했을 때 표기되는 이름 2. position="BottomCenter" 위치 지정
 테일윈드 css 설치방법 [syncfusion Tooltip컴포넌트 사용](https://ej2.syncfusion.com/react/documentation/tooltip/getting-started/).
 
-### `npm start`
+### React router-dom-v6
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+1. Router-dom NavLink 태그를 통해서
+   <NavLink to={`/${item.name}`} onClick={()=>{}} className={({ isActive })=>{ return isActive ? activeLink : normalLink }}>
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+isActive라는 state를 받아와 버튼이 눌러져 활성화가 되어 있는 상태 true 와 false 의 스타일을 지정 할 수 있다.
 
 ### `npm test`
 
