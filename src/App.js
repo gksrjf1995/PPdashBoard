@@ -23,7 +23,7 @@ import {Calender,
   Stack,
   Pyramid} from "./Pages/index"
 
-import {Navbar  , Sidebar ,} from "./component"
+import {Navbar  , Sidebar, ThemeSettings ,} from "./component"
 import {useStateContext} from "./contexts/ContextProvider"
 
 function App() {
@@ -34,7 +34,7 @@ function App() {
     <div>
       <BrowserRouter>
         <div className=' flex  relative dark:bg-main-dark-bg '>
-          <div className='fixed  right-4 bottom-4 overflow-auto'  style={{zIndex : '100'}}>
+          <div className='fixed  right-4 bottom-4 overflow-x-visible'  style={{zIndex : '100'}}>
             <TooltipComponent content={"Sett"} position="top">
               <button style={{backgroundColor:"blue",borderRadius:"50%"}} type='button' className='text-3xl p-3 hover:drop-shadow-xl  hover:bg-light-gray'>
                 <FiSettings className="text-white"/>
@@ -42,17 +42,19 @@ function App() {
             </TooltipComponent>
           </div>
         </div>
-        {activemenu ? <div className='absolute top-0 w-72  sidebar dark:bg-secondary-dark-bg bg-white'>
+        {activemenu ? <div className='absolute top-0 w-72 overflow-auto dark:bg-secondary-dark-bg bg-white'>
           <Sidebar/> 
-        </div> : <div className='md:overflow-x-auto hidden w-0 dark:bg-secondary-dark-bg '>
+        </div> : <div className=' overflow-auto md:overflow-auto hidden w-0 dark:bg-secondary-dark-bg '>
           <Sidebar/> 
         </div>  
         }
         <div className={`w-full bg-cyan-200 dark:main-dark-bg main-bg min-h-screen  ${activemenu ? "md:ml-72": "flex-2"}`}>
-            <div className='fixed md:static overflow-visible dark:bg-main-dark-bg navbar w-full '>
+            <div className='fixed md:static overflow--y-visible dark:bg-main-dark-bg navbar w-full '>
             <Navbar/>
-            <div className='right-0 top-0'>
+            <div className='right-0 top-0 overflow-y-visible'>
+            <ThemeSettings/>
               <Routes>
+                
                 <Route path="/"  element={<Ecommerce/>}/>
                 <Route path="/ecommerce" element={<Ecommerce/>}/>
 
