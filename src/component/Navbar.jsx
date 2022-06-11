@@ -26,7 +26,8 @@ const Navbar = () => {
   const {currentColor} = useStateContext(); 
   const { activemenu , setactivemenu  , screenSize ,
     setscreenSize, handleClick , setisClicked , isClicked } = useStateContext();
-
+    console.log(setisClicked);
+    console.log(isClicked);
     useEffect(()=>{
       const handlereSize = () => setscreenSize(window.innerWidth);
 
