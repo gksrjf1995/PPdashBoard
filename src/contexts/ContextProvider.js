@@ -16,11 +16,14 @@ const initState = {
 // 3.StateContext.Provider value={{ key : value }}를 return하는 함수정의
 // children은 context로 value를 리턴 한 뒤 화면의 모든 context를 return 해줘야되기때문 
 export const ContextProvider = ({children}) => {
+   
+    const handleClick = (clicked) => {
+        setisClicked({...initState , [clicked] : true});
+        
+         
+    }
     const [activemenu , setactivemenu] = useState(true);
     const [isClicked ,  setisClicked] = useState(initState);
-    const handleClick = (clicked) => {
-        return setisClicked({...initState , [clicked] : true});
-    }
     const [screenSize , setscreenSize] = useState();
     const [currentColor , setcurrentColor] = useState('#03C9D7');
     const [currentMode , setcurrentMode] = useState("Light");
@@ -46,6 +49,7 @@ export const ContextProvider = ({children}) => {
         setscreenSize,
         currentColor,
         setMode,
+        initState,
         setColor,
         currentMode,
         setcurrentColor,
